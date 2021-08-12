@@ -14,8 +14,8 @@ function Hello() {
     const classes = useStyles();
 
     return (
-        <div>
-            <img src={hello} alt="Hello"/>
+        <div className="container-sm">
+            <img src={hello} width={400} alt="Hello"/>
             <h2>Hoy queremos compartir una gran noticia</h2>
             <Typography className={classes.root}>
                 <Link href="/news">
