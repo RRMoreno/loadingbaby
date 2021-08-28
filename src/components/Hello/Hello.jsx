@@ -8,14 +8,17 @@ const useStyles = makeStyles((theme) => ({
             marginLeft: theme.spacing(2),
         },
     },
+    images: {
+        marginTop: '4rem'
+    },
 }));
 
 function Hello() {
     const classes = useStyles();
 
     return (
-        <div className="container-sm">
-            <img src={hello} width={400} alt="Hello"/>
+        <div className={classes.images + ' container-sm'}>
+            <img src={hello} width={400} alt="Hello" />
             <h2>Hoy queremos compartir una gran noticia</h2>
             <Typography className={classes.root}>
                 <Link href="/news">

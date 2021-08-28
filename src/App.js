@@ -3,6 +3,7 @@ import {BrowserRouter as Router, Route, Switch, Redirect} from "react-router-dom
 import Hello from "./components/Hello/Hello";
 import Noticia from "./components/Noticia/Noticia";
 import ElevateAppBar from "./components/ElevateAppBar/ElevateAppBar";
+import PrimerTrimestre from "./components/PrimerTrimestre/PrimerTrimestre";
 
 function App() {
     return (
@@ -18,6 +19,9 @@ function App() {
                     </Route>
                     <Route exact path="/news">
                         <Noticia/>
+                    </Route>
+                    <Route exact path="/first-trimester">
+                        <PrimerTrimestre/>
                     </Route>
                 </Switch>
             </div>
